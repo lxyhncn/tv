@@ -2,12 +2,12 @@
 //配置方法：打开软件-设置-配置地址-粘帖此配置地址-返回主页完成
 //本接口免费使用，仅供软件测试使用，请勿商业用途。
 {
-  "spider": "./jar/jinenge.jar;md5;9cc29f6286b2fe7910628852929c4bdb",
+  "spider": "./jar/jinenge.jar;md5;5b59d2999497d6e0c1eb256bcd77f2c7",
   "wallpaper": "https://tv.jinenyy.vip",
   "sites": [
     {
       "key": "drpy_js_豆瓣",
-      "name": "🎈┃热门┃推荐",
+      "name": "🎈主页┃热门推荐",
       "type": 3,
       "api": "./js/通用api数据.js",
       "searchable": 1,
@@ -16,17 +16,20 @@
       "ext": "./js/豆瓣推荐.js"
     },
     {
-      "key": "短剧one",
-      "name": "🥰┃短剧┃视频",
+      "key": "csp_Duanju",
+      "name": "🎭┃短剧┃视频",
       "type": 3,
-      "api": "csp_Panda",
-      "ext": "./json/短剧.json"
+      "api": "csp_Duanju",
+      "ext": "./json/短剧.json",
+      "playerType": "2"
     },
     {
       "key": "种子短剧",
-      "name": "💮┃短剧┃视频",
-      "type": 1,
-      "api": "http://zzdj.cc/api.php/provide/vod"
+      "name": "🍒┃短剧┃种子",
+      "type": 3,
+      "api": "./js/通用api数据.js",
+      "ext": "./js/种子短剧.js",
+      "playerType": 2
     },
     {
       "key": "alist",
@@ -47,6 +50,19 @@
       "ext": "./js/南瓜配置.js"
     },
     {
+      "key": "比特",
+      "name": "✌️️┃比特┃影视",
+      "type": 3,
+      "api": "csp_Bttwo"
+    },
+    {
+      "key": "csp_LiteApple",
+      "name": "🍎┃苹果┃影视",
+      "type": 3,
+      "playerType": "2",
+      "api": "csp_LiteApple"
+    },
+    {
       "key": "csp_Panda_玩偶哥哥",
       "name": "👲┃玩偶┃影视",
       "api": "csp_Panda",
@@ -64,7 +80,7 @@
       "api": "csp_AppSK",
       "searchable": 1,
       "quickSearch": 1,
-      "ext": "FbjPcVZY48PN/RIZ5QqOrspkJ4ZHF98MCHVX87i5y01XUNSIsT3IgxCP9qyzByO7aWmK03MmmHYwQmNlCJx9KFpYWNSc3hbeLTlD3SAclaw3AOnn"
+      "ext": "http://127.0.0.1:9978/file/fatcat/token.txt"
     },
     {
       "key": "南坊",
@@ -97,8 +113,7 @@
       "api": "csp_Jianpian",
       "type": 3,
       "playerType": "2",
-      "ext": "http://api2.rinhome.com",
-      "jar": "./jar/通用.jar;md5;f2e335a610902ad385828c2e67ad884a"
+      "ext": "http://api2.rinhome.com"
     },
     {
       "key": "csp_Nmys",
@@ -129,6 +144,48 @@
       "quickSearch": 1,
       "filterable": 1,
       "jar": "./jar/通用.jar;md5;f2e335a610902ad385828c2e67ad884a"
+    },
+    {
+      "key": "黑狐",
+      "name": "🦊┃黑狐┃影视",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "playerType": "2",
+      "api": "csp_XBPQ",
+      "ext": {
+        "站名": "黑狐影院",
+        "主页url": "http://fagmn.com",
+        "数组": "class=\"stui-vodlist__box\"&&</a",
+        "图片": "data-original=\"&&\"",
+        "标题": "title=\"&&\"",
+        "链接": "href=\"&&\"",
+        "嗅探词": ".m3u8?#v3.huoshanvod.com#.m3u8#v3-dy-o.zjcdn#sf16-sg.larksuitecdn.com#v.kd1.qq.com#.mp4",
+        "过滤词": "/hls/#php",
+        "副标题": "<span class=\"pic-text text-right\">&&</span>",
+        "搜索url": "http://fagmn.com/search.php;post;searchword={wd}",
+        "搜索模式": "1",
+        "搜索数组": "<a class=\"v-thumb stui-vodlist__thumb&&</a>",
+        "搜索图片": "data-original=\"&&\"",
+        "搜索标题": "title=\"&&\"",
+        "搜索链接": "href=\"&&\"",
+        "搜索副标题": "<span class=\"pic-text text-right\">&&</span>",
+        "搜索后缀": "/view/",
+        "线路数组": "href=\"#down&&/a>[替换:奇异视频>>黑狐一线#优酷视频>>黑狐二线#搜狐视频>>黑狐三线#咪咕视频>>黑狐四线]",
+        "线路标题": ">&&<",
+        "播放数组": "class=\"stui-content__playlist clearfix&&</ul>",
+        "状态": "地区：&&</p>",
+        "导演": "导演：&&</p>",
+        "主演": "主演：&&</p>",
+        "简介": "简介：&&</div>",
+        "播放列表": "<a&&/a>",
+        "播放标题": ">&&<",
+        "播放链接": "href=\"&&\"",
+        "免嗅": "0",
+        "分类": "电影$1#电视剧$2#动漫$3#综艺$4",
+        "分类url": "http://fagmn.com/list/{cateId}_{catePg}.html?order=time"
+      }
     },
     {
       "key": "厂长",
@@ -187,15 +244,56 @@
       "ext": "./js/云播配置.js"
     },
     {
+      "key": "csp_Xb6v",
+      "name": "🐤┃6V磁力┃影视",
+      "type": 3,
+      "api": "csp_Xb6v",
+      "playerType": "2"
+    },
+    {
+      "key": "乐乐",
+      "name": "🎡️┃乐乐┃影视",
+      "type": 1,
+      "api": "https://leshizyapi.com/api.php/provide/vod/at/json/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "开心",
+      "name": "🥰️┃开心┃影视",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://rihou.vip:55/lib/开心HK影视.json"
+    },
+    {
+      "key": "小胡",
+      "name": "🍈️┃小胡┃影视",
+      "type": 3,
+      "api": "http://dt.xn--yety82d.love/js/lib/drpy2.min.js",
+      "ext": "http://dt.xn--yety82d.love/js/小胡.js",
+      "playerType": 2
+    },
+    {
       "key": "新视觉",
       "name": "🐦┃视觉┃影视",
       "type": 3,
       "api": "csp_Xinsj",
-      "searchable": 1,
+      "searchable": 0,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "https://www.80yy3.com/",
-      "jar": "http://like.xn--z7x900a.live:66/jar/fatcat.jar;md5;f2e335a610902ad385828c2e67ad884a"
+      "ext": "https://www.80yy3.com/"
+    },
+    {
+      "key": "csp_Nkdy",
+      "name": "🏔┃耐看┃影视",
+      "type": 3,
+      "playerType": "2",
+      "api": "csp_Nkdy",
+      "searchable": 0
     },
     {
       "key": "007影视",
@@ -227,6 +325,43 @@
       "type": 3,
       "api": "csp_Panda",
       "ext": "http://我不是.肥猫.live/json/虎虎.json"
+    },
+    {
+      "key": "哔嘀",
+      "name": "️️💦┃哔嘀┃影视",
+      "type": 3,
+      "api": "csp_Bdys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "playerType": "1"
+    },
+    {
+      "key": "毛驴",
+      "name": "🦙┃毛驴┃影视",
+      "type": 3,
+      "api": "csp_MaoLv",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "兄弟",
+      "name": "👯┃兄弟┃影视",
+      "type": 3,
+      "api": "csp_Xdys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "白嫖",
+      "name": "🌅┃白嫖┃影视",
+      "type": 3,
+      "api": "csp_BaiPiao",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
       "key": "drpy_js_360影视",
